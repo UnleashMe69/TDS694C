@@ -22,46 +22,32 @@ def main():
     xze = re.search('^.*XZE (.+);PT_O.*', first_line)
     if xze:
         xze = xze.group(1)
-#        print("xze: ", end = '')
-#        print(xze)
 
     xin = re.search('^.*XIN (.+);XZ.*', first_line)
     if xin:
         xin = xin.group(1)
-#        print("xin: ", end = '')
-#        print(xin)
 
     pt_o = re.search('^.*PT_O (.+);YUN.*', first_line)
     if pt_o:
         pt_o = pt_o.group(1)
-#        print("pt_o: ", end = '')
-#        print(pt_o)
 
     yze = re.search('^.*YZE (.+);:.*', first_line)
     if yze:
         yze = yze.group(1)
-#        print("yze: ", end = '')
-#        print(yze)
 
     ymu = re.search('^.*YMU (.+);YOF.*', first_line)
     if ymu:
         ymu = ymu.group(1)
-#        print("ymu: ", end = '')
-#        print(ymu)
 
     yof = re.search('^.*YOF (.+);YZE.*', first_line)
     if yof:
         yof = yof.group(1)
-#        print("yof: ", end = '')
-#        print(yof)
 
 # We need to extract number of points (to plot the data)
 
     nr_p = re.search('^.*NR_P (.+);PT_F.*', first_line)
     if nr_p:
         nr_p = nr_p.group(1)
-#        print("nr_p: ", end = '')
-#        print(nr_p)
 
 # Secondly, we need to extract all the 'y' values. Here's how:
 
