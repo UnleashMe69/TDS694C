@@ -6,7 +6,7 @@ When you transfer signal plotted on the oscilloscope using LabView, the data are
 
 For more information about the encoded data of the TDS694C, the user can refer to  _TDS Family Oscilloscope Programmer Manual "Command Descriptions"_
 
-The corresponding page (355) can be found in this repository with an example file of encoded plot data exported by the TDS694C.
+The corresponding page (355) can be found in this repository with an example file (file named _fft.txt_) of encoded plot data exported by the TDS694C.
 ## Installation
 
 You can either download the Python script or clone this repository
