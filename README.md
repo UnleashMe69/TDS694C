@@ -1,4 +1,5 @@
 # Oscilloscope_Plot_Data_Decoder
+[![Maintainability](https://api.codeclimate.com/v1/badges/1971e445184b69a5452a/maintainability)](https://codeclimate.com/github/UnleashMe69/TDS694C/maintainability)
 
 Oscilloscope_Plot_Data_Decoder is a Python script to decode the plot data transferred by the oscilloscope TDS694C.
 
