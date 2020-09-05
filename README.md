@@ -1,6 +1,6 @@
-# TDS694C_Data_Decoder
+# Oscilloscope_Plot_Data_Decoder
 
-TDS694C_Data_Decoder is a Python script to decode the plot data transferred by the oscilloscope TDS694C.
+Oscilloscope_Plot_Data_Decoder is a Python script to decode the plot data transferred by the oscilloscope TDS694C.
 
 When you transfer signal plotted on the oscilloscope using LabView, the data are encoded. This Python script decodes the data and writes in a csv file so you can freely plot the data on your favorite software and add it to your articles, for example.
 
@@ -19,8 +19,8 @@ git clone https://github.com/UnleashMe69/TDS694C
 ## Usage
 
 ```bash
-chmod +x oscilloscope_data_decoder.py.py
-./oscilloscope_data_decoder.py.py -f exported_data.txt -o decoded_data.csv
+chmod +x oscilloscope_plot_data_decoder.py.py
+./oscilloscope_plot_data_decoder.py -f exported_data.txt -o decoded_data.csv
 ```
 
 ## Contributing
