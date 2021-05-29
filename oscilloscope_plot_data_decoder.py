@@ -81,11 +81,15 @@ def main():
         filewriter = csv.writer(csvfile, delimiter=',',
                                 quoting=csv.QUOTE_MINIMAL)
         filewriter.writerow(['X_n', 'Y_n'])
+
+        # Initializing temporary variables that will be used in the for loop
+        # during the write to CSV.
+        _xze,_xin,_yze,_ymu,_yof = [float(s) for s in [xze,xin,yze,ymu,yof]]
+        _pt_o = int(pt_o)
+
         for index in range(0, int(nr_p)):
-            filewriter.writerow([str(float(xze) + float(xin) *
-                                     (index - int(pt_o))),
-                                 str(float(yze) + float(ymu) * (int(y_list[index])
-                                                                - float(yof)))])
+            filewriter.writerow([str(_xze + _xin * (index - _pt_o)),
+                                 str(_yze + _ymu * (int(y_list[index]) - _yof))])
 
     print('[*] Data succesfully decoded and written to file: {}!'.format(outfile))
 
